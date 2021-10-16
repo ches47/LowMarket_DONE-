@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    position: relative; 
+}
+//scrollbar
+::-webkit-scrollbar
+{
+  width: 12px;  
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(25, 195, 19, 0.1);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: $green;
+    border-radius: 12px;
+}
+//scrollbar END
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.icon-emblem {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/stocks.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem2 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/news.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem3 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/vegetables.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem4 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/milkproduct.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem5 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/breadandsweets.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem6 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/grocery_store.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem7 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/meat_fish.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem8 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/freezing.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem9 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/tea_coffee.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem10 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/drinks.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem11 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/house_office.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem12 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/beautyandhealth.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem13 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/childrenandmam.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.icon-emblem14 {
+    position: relative;
+    padding-left: 15px;
+    background-image: url(../img/main/menu__list/some.svg);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+// breadcrumbs
+.breadcrumbs {
+    line-height: 27px;
+   &__inner {
+        padding: 45px 0 30px; 
+   } 
+   &__list {
+       color: $green;
+       li {
+           display: inline-block;
+           position: relative;
+           & + li {
+                padding-left: 8px;    
+           }
+           &:last-child {
+            a,
+            span {
+                color: $green;
+            }
+           }
+           a {
+             color: $gray;
+           }
+       }
+   }
+}
+
+
+.slick-next.slick-arrow {
+    font-size: 0px;
+}
+
+.slick-prev.slick-arrow {
+    font-size: 0px;
+}
